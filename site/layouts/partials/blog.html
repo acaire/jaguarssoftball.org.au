@@ -1,9 +1,11 @@
 <div class="bg-off-white pv4">
 	<div class="ph3 mw7 center">
 
-		<h2 class="f2 b lh-title mb3">Latest stories</h2>
-
+		<h2 class="f2 b lh-title mb3">Facebook Updates & News</h2>
 		<div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
+				<div class="ph1-ns w-50-ns flex">
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjaguarssoftballclubwa&tabs=timeline&width=800&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="800" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+				</div>
 			{{ range first 4 (where .Data.Pages "Type" "post") }}
 				<div class="ph1-ns w-50-ns flex">
 					{{ .Render "li" }}

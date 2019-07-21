@@ -4,10 +4,12 @@
 
 {{ partial "short-text" .Params.blurb}}
 
-{{ partial "2-up" .Params }}
-
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
-
 {{ partial "blog" . }}
 
+{{ partial "2-up" .Params }}
+
+<img src=/img/wanneroocyclecitylogo-300x134.jpg>
+<img src=/img/wasa-logo.jpg>
+<img src=/img/kidsport-logo_web-300x55.jpg>
+<img src=/img/lli1.jpg>
 {{ end }}
